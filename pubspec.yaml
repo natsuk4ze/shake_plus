@@ -1,0 +1,20 @@
+name: shake_plus
+description: null
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.3.0-174.3.beta <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sensors_plus: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
