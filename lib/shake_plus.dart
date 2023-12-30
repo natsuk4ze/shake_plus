@@ -53,7 +53,9 @@ class ShakeDetector {
 
   /// Starts listening to accelerometer events
   void startListening() {
-    streamSubscription = accelerometerEventStream().listen(
+    streamSubscription = accelerometerEventStream(
+      samplingPeriod: SensorInterval.gameInterval,
+    ).listen(
       (AccelerometerEvent event) {
         double x = event.x;
         double y = event.y;
